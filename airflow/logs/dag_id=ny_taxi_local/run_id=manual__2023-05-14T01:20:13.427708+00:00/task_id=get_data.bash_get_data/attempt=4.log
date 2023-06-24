@@ -1,0 +1,29 @@
+[2023-05-14T16:16:59.700+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-14T01:20:13.427708+00:00 [queued]>
+[2023-05-14T16:16:59.707+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-14T01:20:13.427708+00:00 [queued]>
+[2023-05-14T16:16:59.708+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-14T16:16:59.708+0000] {taskinstance.py:1289} INFO - Starting attempt 4 of 4
+[2023-05-14T16:16:59.708+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-14T16:16:59.716+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): get_data.bash_get_data> on 2023-05-14 01:20:13.427708+00:00
+[2023-05-14T16:16:59.721+0000] {standard_task_runner.py:55} INFO - Started process 311 to run task
+[2023-05-14T16:16:59.724+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'get_data.bash_get_data', 'manual__2023-05-14T01:20:13.427708+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmpn2lr78ch']
+[2023-05-14T16:16:59.726+0000] {standard_task_runner.py:83} INFO - Job 122: Subtask get_data.bash_get_data
+[2023-05-14T16:16:59.784+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-14T01:20:13.427708+00:00 [running]> on host fdfc81637e26
+[2023-05-14T16:16:59.833+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=get_data.bash_get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-14T01:20:13.427708+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-14T01:20:13.427708+00:00
+[2023-05-14T16:16:59.836+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-05-14T16:16:59.837+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'curl -sSL https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet > /opt/***/yellow_tripdata_2021-01.parquet']
+[2023-05-14T16:16:59.848+0000] {subprocess.py:86} INFO - Output:
+[2023-05-14T16:17:01.283+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-14T16:17:01.285+0000] {logging_mixin.py:137} INFO - File renamed from yellow_tripdata_2021-01.parquet to yellow_tripdata_2023-05-14-16-17-01.parquet
+[2023-05-14T16:17:01.286+0000] {python.py:177} INFO - Done. Returned value was: yellow_tripdata_2023-05-14-16-17-01.parquet
+[2023-05-14T16:17:01.307+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=ny_taxi_local, task_id=get_data.bash_get_data, execution_date=20230514T012013, start_date=20230514T161659, end_date=20230514T161701
+[2023-05-14T16:17:01.355+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-05-14T16:17:01.376+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check

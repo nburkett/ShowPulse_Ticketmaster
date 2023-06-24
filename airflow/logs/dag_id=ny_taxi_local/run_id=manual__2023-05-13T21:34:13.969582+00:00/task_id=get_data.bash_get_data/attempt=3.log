@@ -1,0 +1,45 @@
+[2023-05-13T21:41:27.626+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-13T21:34:13.969582+00:00 [queued]>
+[2023-05-13T21:41:27.633+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-13T21:34:13.969582+00:00 [queued]>
+[2023-05-13T21:41:27.634+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T21:41:27.634+0000] {taskinstance.py:1289} INFO - Starting attempt 3 of 3
+[2023-05-13T21:41:27.635+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T21:41:27.647+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): get_data.bash_get_data> on 2023-05-13 21:34:13.969582+00:00
+[2023-05-13T21:41:27.652+0000] {standard_task_runner.py:55} INFO - Started process 1500 to run task
+[2023-05-13T21:41:27.656+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'get_data.bash_get_data', 'manual__2023-05-13T21:34:13.969582+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmpuwz1hge0']
+[2023-05-13T21:41:27.658+0000] {standard_task_runner.py:83} INFO - Job 43: Subtask get_data.bash_get_data
+[2023-05-13T21:41:27.712+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-13T21:34:13.969582+00:00 [running]> on host fdfc81637e26
+[2023-05-13T21:41:27.761+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=get_data.bash_get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-13T21:34:13.969582+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-13T21:34:13.969582+00:00
+[2023-05-13T21:41:27.763+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-05-13T21:41:27.764+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'curl -sSL https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.csv.gz > /opt/***/{ run_id }_yellow_tripdata_2021-01.csv.gz']
+[2023-05-13T21:41:27.773+0000] {subprocess.py:86} INFO - Output:
+[2023-05-13T21:42:43.019+0000] {subprocess.py:93} INFO - curl: (7) Failed to connect to run_id port 80: Connection refused
+[2023-05-13T21:42:43.038+0000] {subprocess.py:93} INFO - curl: (3) unmatched close brace/bracket in URL position 1:
+[2023-05-13T21:42:43.040+0000] {subprocess.py:93} INFO - }_yellow_tripdata_2021-01.csv.gz
+[2023-05-13T21:42:43.041+0000] {subprocess.py:93} INFO -  ^
+[2023-05-13T21:42:43.044+0000] {subprocess.py:97} INFO - Command exited with return code 7
+[2023-05-13T21:42:43.087+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 217, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fetch_and_upload.py", line 49, in bash_get_data
+    output = op.execute(context={})
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 7.
+[2023-05-13T21:42:43.102+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=ny_taxi_local, task_id=get_data.bash_get_data, execution_date=20230513T213413, start_date=20230513T214127, end_date=20230513T214243
+[2023-05-13T21:42:43.115+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 43 for task get_data.bash_get_data (Bash command failed. The command returned a non-zero exit code 7.; 1500)
+[2023-05-13T21:42:43.131+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-13T21:42:43.148+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,46 @@
+[2023-06-21T13:04:31.313+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: showpulse_dbt_dag.dbt_run scheduled__2023-06-21T12:48:18.016371+00:00 [queued]>
+[2023-06-21T13:04:31.319+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: showpulse_dbt_dag.dbt_run scheduled__2023-06-21T12:48:18.016371+00:00 [queued]>
+[2023-06-21T13:04:31.320+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-21T13:04:31.321+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-21T13:04:31.321+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-21T13:04:31.329+0000] {taskinstance.py:1309} INFO - Executing <Task(BashOperator): dbt_run> on 2023-06-21 12:48:18.016371+00:00
+[2023-06-21T13:04:31.333+0000] {standard_task_runner.py:55} INFO - Started process 3473 to run task
+[2023-06-21T13:04:31.337+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'showpulse_dbt_dag', 'dbt_run', 'scheduled__2023-06-21T12:48:18.016371+00:00', '--job-id', '706', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmpiqklpqcc']
+[2023-06-21T13:04:31.338+0000] {standard_task_runner.py:83} INFO - Job 706: Subtask dbt_run
+[2023-06-21T13:04:31.402+0000] {task_command.py:389} INFO - Running <TaskInstance: showpulse_dbt_dag.dbt_run scheduled__2023-06-21T12:48:18.016371+00:00 [running]> on host 62cfed75eae1
+[2023-06-21T13:04:31.464+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=nburkett
+AIRFLOW_CTX_DAG_ID=showpulse_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-21T12:48:18.016371+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-21T12:48:18.016371+00:00
+[2023-06-21T13:04:31.465+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-21T13:04:31.466+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /dbt/ticketmaster_transformation && dbt run']
+[2023-06-21T13:04:31.479+0000] {subprocess.py:86} INFO - Output:
+[2023-06-21T13:04:33.035+0000] {subprocess.py:93} INFO - [0m13:04:33  Running with dbt=1.5.1
+[2023-06-21T13:04:33.698+0000] {subprocess.py:93} INFO - [0m13:04:33  Found 4 models, 0 tests, 0 snapshots, 0 analyses, 356 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[2023-06-21T13:04:33.702+0000] {subprocess.py:93} INFO - [0m13:04:33
+[2023-06-21T13:04:34.701+0000] {subprocess.py:93} INFO - [0m13:04:34  Concurrency: 4 threads (target='dev')
+[2023-06-21T13:04:34.702+0000] {subprocess.py:93} INFO - [0m13:04:34
+[2023-06-21T13:04:34.713+0000] {subprocess.py:93} INFO - [0m13:04:34  1 of 4 START sql table model twitter_kafka_pyspark_test.distinct_data .......... [RUN]
+[2023-06-21T13:04:34.714+0000] {subprocess.py:93} INFO - [0m13:04:34  2 of 4 START sql table model twitter_kafka_pyspark_test.dm_events .............. [RUN]
+[2023-06-21T13:04:34.716+0000] {subprocess.py:93} INFO - [0m13:04:34  3 of 4 START sql table model twitter_kafka_pyspark_test.my_first_dbt_model ..... [RUN]
+[2023-06-21T13:04:37.523+0000] {subprocess.py:93} INFO - [0m13:04:37  3 of 4 OK created sql table model twitter_kafka_pyspark_test.my_first_dbt_model  [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.80s]
+[2023-06-21T13:04:37.529+0000] {subprocess.py:93} INFO - [0m13:04:37  4 of 4 START sql view model twitter_kafka_pyspark_test.my_second_dbt_model ..... [RUN]
+[2023-06-21T13:04:37.643+0000] {subprocess.py:93} INFO - [0m13:04:37  2 of 4 OK created sql table model twitter_kafka_pyspark_test.dm_events ......... [[32mCREATE TABLE (1.3k rows, 178.2 KiB processed)[0m in 2.92s]
+[2023-06-21T13:04:38.466+0000] {subprocess.py:93} INFO - [0m13:04:38  1 of 4 OK created sql table model twitter_kafka_pyspark_test.distinct_data ..... [[32mCREATE TABLE (1.1k rows, 638.3 KiB processed)[0m in 3.74s]
+[2023-06-21T13:04:38.648+0000] {subprocess.py:93} INFO - [0m13:04:38  4 of 4 OK created sql view model twitter_kafka_pyspark_test.my_second_dbt_model  [[32mCREATE VIEW (0 processed)[0m in 1.11s]
+[2023-06-21T13:04:38.689+0000] {subprocess.py:93} INFO - [0m13:04:38
+[2023-06-21T13:04:38.691+0000] {subprocess.py:93} INFO - [0m13:04:38  Finished running 3 table models, 1 view model in 0 hours 0 minutes and 4.98 seconds (4.98s).
+[2023-06-21T13:04:38.720+0000] {subprocess.py:93} INFO - [0m13:04:38
+[2023-06-21T13:04:38.722+0000] {subprocess.py:93} INFO - [0m13:04:38  [32mCompleted successfully[0m
+[2023-06-21T13:04:38.724+0000] {subprocess.py:93} INFO - [0m13:04:38
+[2023-06-21T13:04:38.726+0000] {subprocess.py:93} INFO - [0m13:04:38  Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[2023-06-21T13:04:39.200+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-06-21T13:04:39.228+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=showpulse_dbt_dag, task_id=dbt_run, execution_date=20230621T124818, start_date=20230621T130431, end_date=20230621T130439
+[2023-06-21T13:04:39.261+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-21T13:04:39.276+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

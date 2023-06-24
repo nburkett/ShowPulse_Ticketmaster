@@ -1,0 +1,42 @@
+[2023-06-21T18:07:43.252+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: showpulse_dbt_dag.dbt_run scheduled__2023-06-21T18:06:38.366225+00:00 [queued]>
+[2023-06-21T18:07:43.258+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: showpulse_dbt_dag.dbt_run scheduled__2023-06-21T18:06:38.366225+00:00 [queued]>
+[2023-06-21T18:07:43.259+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-21T18:07:43.259+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-21T18:07:43.260+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-21T18:07:43.267+0000] {taskinstance.py:1309} INFO - Executing <Task(BashOperator): dbt_run> on 2023-06-21 18:06:38.366225+00:00
+[2023-06-21T18:07:43.271+0000] {standard_task_runner.py:55} INFO - Started process 5249 to run task
+[2023-06-21T18:07:43.274+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'showpulse_dbt_dag', 'dbt_run', 'scheduled__2023-06-21T18:06:38.366225+00:00', '--job-id', '898', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmp5mlyk68t']
+[2023-06-21T18:07:43.275+0000] {standard_task_runner.py:83} INFO - Job 898: Subtask dbt_run
+[2023-06-21T18:07:43.327+0000] {task_command.py:389} INFO - Running <TaskInstance: showpulse_dbt_dag.dbt_run scheduled__2023-06-21T18:06:38.366225+00:00 [running]> on host 62cfed75eae1
+[2023-06-21T18:07:43.376+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=nburkett
+AIRFLOW_CTX_DAG_ID=showpulse_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-21T18:06:38.366225+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-21T18:06:38.366225+00:00
+[2023-06-21T18:07:43.378+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-21T18:07:43.378+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /dbt/ticketmaster_transformation && dbt run']
+[2023-06-21T18:07:43.386+0000] {subprocess.py:86} INFO - Output:
+[2023-06-21T18:07:44.640+0000] {subprocess.py:93} INFO - [0m18:07:44  Running with dbt=1.5.1
+[2023-06-21T18:07:45.126+0000] {subprocess.py:93} INFO - [0m18:07:45  Found 4 models, 0 tests, 0 snapshots, 0 analyses, 356 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[2023-06-21T18:07:45.128+0000] {subprocess.py:93} INFO - [0m18:07:45
+[2023-06-21T18:07:45.949+0000] {subprocess.py:93} INFO - [0m18:07:45  Concurrency: 4 threads (target='dev')
+[2023-06-21T18:07:45.952+0000] {subprocess.py:93} INFO - [0m18:07:45
+[2023-06-21T18:07:45.963+0000] {subprocess.py:93} INFO - [0m18:07:45  1 of 4 START sql table model twitter_kafka_pyspark_test.distinct_data .......... [RUN]
+[2023-06-21T18:07:45.966+0000] {subprocess.py:93} INFO - [0m18:07:45  2 of 4 START sql table model twitter_kafka_pyspark_test.dm_events .............. [RUN]
+[2023-06-21T18:07:45.968+0000] {subprocess.py:93} INFO - [0m18:07:45  3 of 4 START sql table model twitter_kafka_pyspark_test.my_first_dbt_model ..... [RUN]
+[2023-06-21T18:25:44.925+0000] {subprocess.py:93} INFO - [0m18:25:44  3 of 4 OK created sql table model twitter_kafka_pyspark_test.my_first_dbt_model  [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 1078.94s]
+[2023-06-21T18:25:44.929+0000] {subprocess.py:93} INFO - [0m18:25:44  2 of 4 OK created sql table model twitter_kafka_pyspark_test.dm_events ......... [[32mCREATE TABLE (1.3k rows, 178.2 KiB processed)[0m in 1078.95s]
+[2023-06-21T18:25:44.932+0000] {subprocess.py:93} INFO - [0m18:25:44  1 of 4 OK created sql table model twitter_kafka_pyspark_test.distinct_data ..... [[32mCREATE TABLE (1.1k rows, 638.3 KiB processed)[0m in 1078.96s]
+[2023-06-21T18:25:44.937+0000] {subprocess.py:93} INFO - [0m18:25:44  4 of 4 START sql view model twitter_kafka_pyspark_test.my_second_dbt_model ..... [RUN]
+[2023-06-21T18:25:50.791+0000] {local_task_job.py:277} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-06-21T18:25:50.795+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 5249. PIDs of all processes in the group: [5250, 5249]
+[2023-06-21T18:25:50.796+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 5249
+[2023-06-21T18:25:50.797+0000] {taskinstance.py:1488} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-06-21T18:25:50.798+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2023-06-21T18:25:51.011+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5250, status='terminated', started='18:07:43') (5250) terminated with exit code None
+[2023-06-21T18:25:51.013+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5249, status='terminated', exitcode=0, started='18:07:43') (5249) terminated with exit code 0

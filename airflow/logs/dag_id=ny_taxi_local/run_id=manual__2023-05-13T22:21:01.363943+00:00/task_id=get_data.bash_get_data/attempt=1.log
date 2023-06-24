@@ -1,0 +1,39 @@
+[2023-05-13T22:21:02.879+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-13T22:21:01.363943+00:00 [queued]>
+[2023-05-13T22:21:02.885+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-13T22:21:01.363943+00:00 [queued]>
+[2023-05-13T22:21:02.885+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T22:21:02.886+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-05-13T22:21:02.886+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T22:21:02.895+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): get_data.bash_get_data> on 2023-05-13 22:21:01.363943+00:00
+[2023-05-13T22:21:02.898+0000] {standard_task_runner.py:55} INFO - Started process 2555 to run task
+[2023-05-13T22:21:02.902+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'get_data.bash_get_data', 'manual__2023-05-13T22:21:01.363943+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmpxnw6dsdh']
+[2023-05-13T22:21:02.904+0000] {standard_task_runner.py:83} INFO - Job 79: Subtask get_data.bash_get_data
+[2023-05-13T22:21:02.956+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.get_data.bash_get_data manual__2023-05-13T22:21:01.363943+00:00 [running]> on host fdfc81637e26
+[2023-05-13T22:21:03.003+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=get_data.bash_get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-13T22:21:01.363943+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-13T22:21:01.363943+00:00
+[2023-05-13T22:21:03.005+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-05-13T22:21:03.006+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'curl -sSL https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.csv.gz > yellow_tripdata_2021-01.csv.gz']
+[2023-05-13T22:21:03.016+0000] {subprocess.py:86} INFO - Output:
+[2023-05-13T22:21:03.353+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-05-13T22:21:03.360+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 217, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fetch_and_upload.py", line 64, in bash_get_data
+    os.rename(f'{dataset_file}', new_file_name)
+FileNotFoundError: [Errno 2] No such file or directory: 'yellow_tripdata_2021-01.csv.gz' -> 'yellow_tripdata_2023-05-13-22-21-03.csv.gz'
+[2023-05-13T22:21:03.388+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=ny_taxi_local, task_id=get_data.bash_get_data, execution_date=20230513T222101, start_date=20230513T222102, end_date=20230513T222103
+[2023-05-13T22:21:03.408+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 79 for task get_data.bash_get_data ([Errno 2] No such file or directory: 'yellow_tripdata_2021-01.csv.gz' -> 'yellow_tripdata_2023-05-13-22-21-03.csv.gz'; 2555)
+[2023-05-13T22:21:03.443+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-13T22:21:03.459+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

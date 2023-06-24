@@ -1,0 +1,14 @@
+[0m14:18:49.216331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11021f490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c9c610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c9c640>]}
+
+
+============================== 14:18:49.220352 | 4cc194d4-ce77-45f8-ad2d-5783117ce6c9 ==============================
+[0m14:18:49.220352 [info ] [MainThread]: Running with dbt=1.5.1
+[0m14:18:49.220841 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/nicburkett/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:18:49.221351 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/nicburkett/Desktop/ShowPulse_Ticketmaster/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:18:49.222494 [debug] [MainThread]: Command `dbt run` failed at 14:18:49.222031 after 0.04 seconds
+[0m14:18:49.222902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11021f490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c9c760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c9c970>]}
+[0m14:18:49.223179 [debug] [MainThread]: Flushing usage events

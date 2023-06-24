@@ -1,0 +1,24 @@
+[2023-06-11T21:45:45.609+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.upload_data_to_GCS_Lake.local_to_gcs manual__2023-06-11T21:45:43.044814+00:00 [queued]>
+[2023-06-11T21:45:45.616+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.upload_data_to_GCS_Lake.local_to_gcs manual__2023-06-11T21:45:43.044814+00:00 [queued]>
+[2023-06-11T21:45:45.616+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-11T21:45:45.617+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-11T21:45:45.617+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-11T21:45:45.626+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs> on 2023-06-11 21:45:43.044814+00:00
+[2023-06-11T21:45:45.630+0000] {standard_task_runner.py:55} INFO - Started process 101 to run task
+[2023-06-11T21:45:45.634+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'upload_data_to_GCS_Lake.local_to_gcs', 'manual__2023-06-11T21:45:43.044814+00:00', '--job-id', '221', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmp2gso43gs']
+[2023-06-11T21:45:45.636+0000] {standard_task_runner.py:83} INFO - Job 221: Subtask upload_data_to_GCS_Lake.local_to_gcs
+[2023-06-11T21:45:45.691+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.upload_data_to_GCS_Lake.local_to_gcs manual__2023-06-11T21:45:43.044814+00:00 [running]> on host 04f5a8a63034
+[2023-06-11T21:45:45.749+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=upload_data_to_GCS_Lake.local_to_gcs
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-11T21:45:43.044814+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-11T21:45:43.044814+00:00
+[2023-06-11T21:45:47.774+0000] {logging_mixin.py:137} INFO - File yellow_tripdata_2023-06-11-21-45-45.parquet uploaded to Project: global-maxim-338114 and Bucket: <Bucket: dtc_data_lake_global-maxim-338114>.
+[2023-06-11T21:45:47.778+0000] {python.py:177} INFO - Done. Returned value was: gs://<Bucket: dtc_data_lake_global-maxim-338114>/raw/yellow/2021/yellow_tripdata_2023-06-11-21-45-45.parquet
+[2023-06-11T21:45:47.825+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=ny_taxi_local, task_id=upload_data_to_GCS_Lake.local_to_gcs, execution_date=20230611T214543, start_date=20230611T214545, end_date=20230611T214547
+[2023-06-11T21:45:47.862+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-11T21:45:47.882+0000] {taskinstance.py:2596} INFO - 2 downstream tasks scheduled from follow-on schedule check

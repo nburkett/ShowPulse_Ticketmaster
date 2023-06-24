@@ -1,0 +1,360 @@
+[2023-06-04T22:30:18.506+0000] {processor.py:153} INFO - Started process (PID=43) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:30:18.508+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:30:18.510+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:18.509+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:30:19.558+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:19.557+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:30:19.559+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:19.559+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:30:19.567+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:30:19.620+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:19.619+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:30:19.648+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:19.648+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:30:19.664+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 1.162 seconds
+[2023-06-04T22:30:49.998+0000] {processor.py:153} INFO - Started process (PID=58) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:30:50.002+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:30:50.004+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:50.003+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:30:50.310+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:50.310+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:30:50.310+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:50.310+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:30:50.314+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:30:50.330+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:50.329+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:30:50.343+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:30:50.343+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:30:50.354+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.361 seconds
+[2023-06-04T22:31:20.450+0000] {processor.py:153} INFO - Started process (PID=68) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:31:20.454+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:31:20.456+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:20.456+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:31:20.738+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:20.738+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:31:20.739+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:20.739+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:31:20.743+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:31:20.759+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:20.758+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:31:20.773+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:20.773+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:31:20.784+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.341 seconds
+[2023-06-04T22:31:50.966+0000] {processor.py:153} INFO - Started process (PID=78) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:31:50.971+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:31:50.973+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:50.972+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:31:51.265+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:51.265+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:31:51.266+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:51.266+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:31:51.269+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:31:51.285+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:51.285+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:31:51.300+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:31:51.300+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:31:51.310+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.351 seconds
+[2023-06-04T22:32:21.537+0000] {processor.py:153} INFO - Started process (PID=88) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:32:21.539+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:32:21.541+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:21.541+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:32:22.174+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:22.173+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:32:22.182+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:22.182+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:32:22.189+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:32:22.216+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:22.215+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:32:22.240+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:22.240+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:32:22.374+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.841 seconds
+[2023-06-04T22:32:52.591+0000] {processor.py:153} INFO - Started process (PID=97) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:32:52.594+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:32:52.596+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:52.596+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:32:53.036+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:53.036+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:32:53.037+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:53.037+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:32:53.041+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:32:53.058+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:53.057+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:32:53.073+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:32:53.073+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:32:53.083+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.496 seconds
+[2023-06-04T22:33:23.970+0000] {processor.py:153} INFO - Started process (PID=107) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:33:23.972+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:33:23.973+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:23.973+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:33:24.720+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:24.719+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:33:24.722+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:24.722+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:33:24.736+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:33:24.774+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:24.773+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:33:24.808+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:24.807+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:33:24.831+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.866 seconds
+[2023-06-04T22:33:55.320+0000] {processor.py:153} INFO - Started process (PID=117) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:33:55.322+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:33:55.323+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:55.323+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:33:56.053+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:56.053+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:33:56.054+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:56.054+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:33:56.060+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:33:56.083+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:56.083+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:33:56.103+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:33:56.103+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:33:56.197+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.885 seconds
+[2023-06-04T22:34:26.602+0000] {processor.py:153} INFO - Started process (PID=127) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:34:26.605+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:34:26.607+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:26.607+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:34:27.176+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:27.176+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:34:27.177+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:27.177+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:34:27.181+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:34:27.204+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:27.204+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:34:27.228+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:27.228+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:34:27.248+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.650 seconds
+[2023-06-04T22:34:57.759+0000] {processor.py:153} INFO - Started process (PID=136) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:34:57.763+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:34:57.764+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:57.764+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:34:58.617+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:58.617+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:34:58.618+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:58.618+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:34:58.624+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:34:58.651+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:58.651+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:34:58.680+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:34:58.680+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:34:58.696+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.941 seconds
+[2023-06-04T22:35:28.834+0000] {processor.py:153} INFO - Started process (PID=146) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:35:28.840+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:35:28.845+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:35:28.844+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:35:29.893+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:35:29.893+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:35:29.895+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:35:29.895+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:35:29.900+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:35:29.931+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:35:29.931+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:35:29.961+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:35:29.961+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:35:29.989+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 1.169 seconds
+[2023-06-04T22:36:00.403+0000] {processor.py:153} INFO - Started process (PID=156) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:36:00.407+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:36:00.409+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:00.409+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:36:00.739+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:00.739+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:36:00.739+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:00.739+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:36:00.743+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:36:00.759+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:00.759+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:36:00.775+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:00.775+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:36:00.788+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.392 seconds
+[2023-06-04T22:36:31.135+0000] {processor.py:153} INFO - Started process (PID=166) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:36:31.137+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:36:31.138+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:31.138+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:36:31.425+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:31.425+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:36:31.427+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:31.427+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:36:31.430+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:36:31.448+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:31.448+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:36:31.463+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:36:31.463+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:36:31.474+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.343 seconds
+[2023-06-04T22:37:01.822+0000] {processor.py:153} INFO - Started process (PID=175) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:37:01.826+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:37:01.828+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:01.828+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:37:02.105+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:02.105+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:37:02.106+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:02.106+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:37:02.110+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:37:02.126+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:02.125+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:37:02.139+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:02.139+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:37:02.149+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.334 seconds
+[2023-06-04T22:37:32.430+0000] {processor.py:153} INFO - Started process (PID=185) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:37:32.433+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:37:32.435+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:32.435+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:37:32.725+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:32.725+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:37:32.726+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:32.726+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:37:32.729+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:37:32.746+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:32.746+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:37:32.761+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:37:32.761+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:37:32.772+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.350 seconds
+[2023-06-04T22:38:03.067+0000] {processor.py:153} INFO - Started process (PID=195) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:38:03.070+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:38:03.072+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:03.071+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:38:03.351+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:03.351+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:38:03.352+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:03.352+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:38:03.355+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:38:03.371+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:03.371+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:38:03.385+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:03.385+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:38:03.394+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.334 seconds
+[2023-06-04T22:38:33.693+0000] {processor.py:153} INFO - Started process (PID=204) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:38:33.696+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:38:33.698+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:33.697+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:38:33.979+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:33.979+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:38:33.980+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:33.980+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:38:33.983+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:38:33.999+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:33.999+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:38:34.013+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:38:34.013+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:38:34.023+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.336 seconds
+[2023-06-04T22:39:04.421+0000] {processor.py:153} INFO - Started process (PID=214) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:39:04.424+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:39:04.425+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:04.425+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:39:04.716+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:04.716+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:39:04.717+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:04.716+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:39:04.720+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:39:04.736+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:04.735+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:39:04.750+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:04.750+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:39:04.760+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.344 seconds
+[2023-06-04T22:39:35.075+0000] {processor.py:153} INFO - Started process (PID=225) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:39:35.078+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:39:35.080+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:35.080+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:39:35.355+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:35.355+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:39:35.356+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:35.356+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:39:35.360+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:39:35.376+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:35.376+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:39:35.390+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:39:35.390+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:39:35.400+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.331 seconds
+[2023-06-04T22:40:05.722+0000] {processor.py:153} INFO - Started process (PID=236) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:40:05.726+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:40:05.729+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:05.729+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:40:06.032+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:06.031+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:40:06.033+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:06.033+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:40:06.036+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:40:06.053+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:06.053+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:40:06.067+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:06.066+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:40:06.077+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.363 seconds
+[2023-06-04T22:40:36.414+0000] {processor.py:153} INFO - Started process (PID=246) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:40:36.416+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:40:36.417+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:36.417+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:40:36.596+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:36.596+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:40:36.597+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:36.597+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:40:36.601+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:40:36.619+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:36.619+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:40:36.635+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:40:36.635+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:40:36.646+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.236 seconds
+[2023-06-04T22:41:06.994+0000] {processor.py:153} INFO - Started process (PID=256) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:41:06.995+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:41:06.996+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:06.996+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:41:07.206+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:07.206+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:41:07.207+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:07.207+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:41:07.213+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:41:07.247+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:07.247+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:41:07.275+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:07.275+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:41:07.289+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.298 seconds
+[2023-06-04T22:41:37.431+0000] {processor.py:153} INFO - Started process (PID=266) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:41:37.433+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:41:37.434+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:37.434+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:41:37.637+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:37.636+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:41:37.637+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:37.637+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:41:37.641+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:41:37.659+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:37.659+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:41:37.677+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:41:37.677+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:41:37.688+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.261 seconds
+[2023-06-04T22:42:07.844+0000] {processor.py:153} INFO - Started process (PID=276) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:42:07.847+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:42:07.850+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:07.849+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:42:08.036+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:08.035+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:42:08.036+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:08.036+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:42:08.040+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:42:08.058+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:08.057+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:42:08.073+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:08.073+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:42:08.084+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.247 seconds
+[2023-06-04T22:42:38.467+0000] {processor.py:153} INFO - Started process (PID=286) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:42:38.468+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:42:38.470+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:38.470+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:42:38.652+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:38.652+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:42:38.653+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:38.653+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:42:38.656+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:42:38.675+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:38.674+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:42:38.690+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:42:38.689+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:42:38.700+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.237 seconds
+[2023-06-04T22:43:08.828+0000] {processor.py:153} INFO - Started process (PID=303) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:43:08.831+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:43:08.831+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:08.831+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:43:09.092+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:09.092+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:43:09.093+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:09.093+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:43:09.097+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:43:09.118+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:09.118+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:43:09.136+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:09.136+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:43:09.146+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.321 seconds
+[2023-06-04T22:43:39.352+0000] {processor.py:153} INFO - Started process (PID=314) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:43:39.355+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:43:39.357+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:39.356+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:43:39.546+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:39.546+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:43:39.547+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:39.547+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:43:39.550+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:43:39.569+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:39.569+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:43:39.585+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:43:39.585+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:43:39.596+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.251 seconds
+[2023-06-04T22:44:10.017+0000] {processor.py:153} INFO - Started process (PID=325) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:44:10.021+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:44:10.023+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:10.023+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:44:10.233+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:10.233+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:44:10.234+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:10.234+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:44:10.237+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:44:10.256+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:10.256+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:44:10.274+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:10.274+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:44:10.285+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.274 seconds
+[2023-06-04T22:44:40.404+0000] {processor.py:153} INFO - Started process (PID=335) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:44:40.406+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:44:40.408+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:40.408+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:44:40.581+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:40.581+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:44:40.582+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:40.582+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:44:40.585+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:44:40.603+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:40.603+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:44:40.619+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:44:40.619+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:44:40.630+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.232 seconds
+[2023-06-04T22:45:10.862+0000] {processor.py:153} INFO - Started process (PID=345) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:45:10.864+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:45:10.866+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:10.866+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:45:11.046+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:11.046+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:45:11.047+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:11.047+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:45:11.050+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:45:11.068+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:11.067+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:45:11.084+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:11.084+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:45:11.095+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.242 seconds
+[2023-06-04T22:45:42.087+0000] {processor.py:153} INFO - Started process (PID=355) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:45:42.090+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:45:42.091+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:42.091+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:45:42.279+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:42.279+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:45:42.280+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:42.280+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:45:42.283+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:45:42.301+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:42.300+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:45:42.317+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:45:42.317+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:45:42.329+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.248 seconds
+[2023-06-04T22:46:12.487+0000] {processor.py:153} INFO - Started process (PID=365) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:46:12.489+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:46:12.490+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:12.490+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:46:12.676+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:12.675+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:46:12.676+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:12.676+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:46:12.680+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:46:12.698+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:12.697+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:46:12.713+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:12.713+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:46:12.724+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.245 seconds
+[2023-06-04T22:46:42.890+0000] {processor.py:153} INFO - Started process (PID=375) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:46:42.892+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:46:42.893+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:42.893+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:46:43.076+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:43.076+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:46:43.077+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:43.077+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:46:43.080+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:46:43.099+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:43.099+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:46:43.116+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:46:43.115+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:46:43.127+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.243 seconds
+[2023-06-04T22:47:13.480+0000] {processor.py:153} INFO - Started process (PID=385) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:47:13.482+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:47:13.483+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:13.483+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:47:13.671+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:13.671+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:47:13.672+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:13.672+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:47:13.676+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:47:13.695+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:13.695+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:47:13.712+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:13.712+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:47:13.723+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.248 seconds
+[2023-06-04T22:47:43.922+0000] {processor.py:153} INFO - Started process (PID=395) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:47:43.924+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:47:43.925+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:43.925+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:47:44.107+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:44.107+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:47:44.108+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:44.108+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:47:44.111+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:47:44.129+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:44.128+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:47:44.144+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:47:44.144+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:47:44.155+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.240 seconds
+[2023-06-04T22:48:14.388+0000] {processor.py:153} INFO - Started process (PID=406) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:48:14.391+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:48:14.392+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:14.392+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:48:14.571+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:14.571+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:48:14.572+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:14.572+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:48:14.575+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:48:14.593+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:14.592+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:48:14.609+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:14.609+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:48:14.621+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.240 seconds
+[2023-06-04T22:48:45.024+0000] {processor.py:153} INFO - Started process (PID=416) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:48:45.027+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:48:45.028+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:45.028+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:48:45.319+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:45.319+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:48:45.320+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:45.320+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:48:45.324+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:48:45.349+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:45.348+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:48:45.370+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:48:45.370+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:48:45.383+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.366 seconds
+[2023-06-04T22:49:15.451+0000] {processor.py:153} INFO - Started process (PID=426) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:49:15.454+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:49:15.455+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:15.455+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:49:15.677+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:15.677+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:49:15.678+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:15.678+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:49:15.681+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:49:15.702+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:15.702+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:49:15.721+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:15.720+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:49:15.732+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.285 seconds
+[2023-06-04T22:49:45.924+0000] {processor.py:153} INFO - Started process (PID=436) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:49:45.926+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:49:45.927+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:45.927+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:49:46.131+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:46.131+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:49:46.132+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:46.132+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:49:46.136+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:49:46.156+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:46.155+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:49:46.174+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:49:46.173+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:49:46.186+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.267 seconds
+[2023-06-04T22:50:16.389+0000] {processor.py:153} INFO - Started process (PID=446) to work on /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:50:16.391+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2023-06-04T22:50:16.392+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:50:16.392+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:50:16.614+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:50:16.614+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): get_data.bash_get_data>, upload_data_to_GCS_Lake.local_to_gcs already registered for DAG: ny_taxi_local
+[2023-06-04T22:50:16.615+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:50:16.615+0000] {taskmixin.py:211} WARNING - Dependency <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs>, get_data.bash_get_data already registered for DAG: ny_taxi_local
+[2023-06-04T22:50:16.619+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ny_taxi_local']) retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2023-06-04T22:50:16.641+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:50:16.641+0000] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-06-04T22:50:16.660+0000] {logging_mixin.py:137} INFO - [2023-06-04T22:50:16.660+0000] {dag.py:3456} INFO - Setting next_dagrun for ny_taxi_local to 2023-06-04T00:00:00+00:00, run_after=2023-06-05T00:00:00+00:00
+[2023-06-04T22:50:16.673+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.288 seconds

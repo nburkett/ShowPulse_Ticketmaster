@@ -1,0 +1,77 @@
+[2023-06-17T21:38:11.811+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: showpulse_dbt_dag.install_dbt manual__2023-06-17T21:11:58.487136+00:00 [queued]>
+[2023-06-17T21:38:11.818+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: showpulse_dbt_dag.install_dbt manual__2023-06-17T21:11:58.487136+00:00 [queued]>
+[2023-06-17T21:38:11.819+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-17T21:38:11.819+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-17T21:38:11.820+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-17T21:38:11.829+0000] {taskinstance.py:1309} INFO - Executing <Task(BashOperator): install_dbt> on 2023-06-17 21:11:58.487136+00:00
+[2023-06-17T21:38:11.833+0000] {standard_task_runner.py:55} INFO - Started process 1847 to run task
+[2023-06-17T21:38:11.837+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'showpulse_dbt_dag', 'install_dbt', 'manual__2023-06-17T21:11:58.487136+00:00', '--job-id', '276', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmpmbltiqfo']
+[2023-06-17T21:38:11.839+0000] {standard_task_runner.py:83} INFO - Job 276: Subtask install_dbt
+[2023-06-17T21:38:11.898+0000] {task_command.py:389} INFO - Running <TaskInstance: showpulse_dbt_dag.install_dbt manual__2023-06-17T21:11:58.487136+00:00 [running]> on host e60c8c77cdf9
+[2023-06-17T21:38:11.951+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=nburkett
+AIRFLOW_CTX_DAG_ID=showpulse_dbt_dag
+AIRFLOW_CTX_TASK_ID=install_dbt
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-17T21:11:58.487136+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-17T21:11:58.487136+00:00
+[2023-06-17T21:38:11.952+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-17T21:38:11.953+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'pip install dbt']
+[2023-06-17T21:38:11.963+0000] {subprocess.py:86} INFO - Output:
+[2023-06-17T21:38:12.257+0000] {subprocess.py:93} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2023-06-17T21:38:12.530+0000] {subprocess.py:93} INFO - Collecting dbt
+[2023-06-17T21:38:12.658+0000] {subprocess.py:93} INFO -   Downloading dbt-1.0.0.tar.gz (2.9 kB)
+[2023-06-17T21:38:12.664+0000] {subprocess.py:93} INFO -   Preparing metadata (setup.py): started
+[2023-06-17T21:38:12.869+0000] {subprocess.py:93} INFO -   Preparing metadata (setup.py): finished with status 'error'
+[2023-06-17T21:38:12.874+0000] {subprocess.py:93} INFO -   error: subprocess-exited-with-error
+[2023-06-17T21:38:12.875+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.876+0000] {subprocess.py:93} INFO -   × python setup.py egg_info did not run successfully.
+[2023-06-17T21:38:12.876+0000] {subprocess.py:93} INFO -   │ exit code: 1
+[2023-06-17T21:38:12.877+0000] {subprocess.py:93} INFO -   ╰─> [21 lines of output]
+[2023-06-17T21:38:12.877+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.877+0000] {subprocess.py:93} INFO -       As of v1.0.0, `pip install dbt` is no longer supported.
+[2023-06-17T21:38:12.878+0000] {subprocess.py:93} INFO -       Instead, please use one of the following.
+[2023-06-17T21:38:12.878+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.879+0000] {subprocess.py:93} INFO -       **To use dbt with your specific database, platform, or query engine:**
+[2023-06-17T21:38:12.880+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.881+0000] {subprocess.py:93} INFO -           pip install dbt-<adapter>
+[2023-06-17T21:38:12.882+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.882+0000] {subprocess.py:93} INFO -           See full list: https://docs.getdbt.com/docs/available-adapters
+[2023-06-17T21:38:12.883+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.883+0000] {subprocess.py:93} INFO -       **For developers of integrations with dbt Core:**
+[2023-06-17T21:38:12.884+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.885+0000] {subprocess.py:93} INFO -           pip install dbt-core
+[2023-06-17T21:38:12.885+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.886+0000] {subprocess.py:93} INFO -           Be advised, dbt Cores python API is not yet stable or documented
+[2023-06-17T21:38:12.886+0000] {subprocess.py:93} INFO -           (https://docs.getdbt.com/docs/running-a-dbt-project/dbt-api)
+[2023-06-17T21:38:12.887+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.887+0000] {subprocess.py:93} INFO -       **For the previous behavior of `pip install dbt`:**
+[2023-06-17T21:38:12.887+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.888+0000] {subprocess.py:93} INFO -           pip install dbt-core dbt-postgres dbt-redshift dbt-snowflake dbt-bigquery
+[2023-06-17T21:38:12.889+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.889+0000] {subprocess.py:93} INFO -       [end of output]
+[2023-06-17T21:38:12.889+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.890+0000] {subprocess.py:93} INFO -   note: This error originates from a subprocess, and is likely not a problem with pip.
+[2023-06-17T21:38:12.890+0000] {subprocess.py:93} INFO - error: metadata-generation-failed
+[2023-06-17T21:38:12.891+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.891+0000] {subprocess.py:93} INFO - × Encountered error while generating package metadata.
+[2023-06-17T21:38:12.891+0000] {subprocess.py:93} INFO - ╰─> See above for output.
+[2023-06-17T21:38:12.892+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.892+0000] {subprocess.py:93} INFO - note: This is an issue with the package mentioned above, not pip.
+[2023-06-17T21:38:12.892+0000] {subprocess.py:93} INFO - hint: See above for details.
+[2023-06-17T21:38:12.998+0000] {subprocess.py:93} INFO - 
+[2023-06-17T21:38:12.999+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[2023-06-17T21:38:12.999+0000] {subprocess.py:93} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2023-06-17T21:38:13.047+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-06-17T21:38:13.058+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-06-17T21:38:13.061+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=showpulse_dbt_dag, task_id=install_dbt, execution_date=20230617T211158, start_date=20230617T213811, end_date=20230617T213813
+[2023-06-17T21:38:13.072+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 276 for task install_dbt (Bash command failed. The command returned a non-zero exit code 1.; 1847)
+[2023-06-17T21:38:13.101+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-06-17T21:38:13.117+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

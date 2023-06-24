@@ -1,0 +1,40 @@
+[2023-05-13T20:50:27.918+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.create_directory.create_directory manual__2023-05-13T20:50:26.750031+00:00 [queued]>
+[2023-05-13T20:50:27.925+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.create_directory.create_directory manual__2023-05-13T20:50:26.750031+00:00 [queued]>
+[2023-05-13T20:50:27.925+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T20:50:27.926+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-05-13T20:50:27.926+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T20:50:27.935+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): create_directory.create_directory> on 2023-05-13 20:50:26.750031+00:00
+[2023-05-13T20:50:27.940+0000] {standard_task_runner.py:55} INFO - Started process 207 to run task
+[2023-05-13T20:50:27.944+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'create_directory.create_directory', 'manual__2023-05-13T20:50:26.750031+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmpkdq93rkt']
+[2023-05-13T20:50:27.947+0000] {standard_task_runner.py:83} INFO - Job 13: Subtask create_directory.create_directory
+[2023-05-13T20:50:28.007+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.create_directory.create_directory manual__2023-05-13T20:50:26.750031+00:00 [running]> on host fdfc81637e26
+[2023-05-13T20:50:28.065+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=create_directory.create_directory
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-13T20:50:26.750031+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-13T20:50:26.750031+00:00
+[2023-05-13T20:50:28.067+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 217, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fetch_and_upload.py", line 26, in create_directory
+    os.makedirs(path)
+  File "/usr/local/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/usr/local/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/usr/local/lib/python3.7/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '../data'
+[2023-05-13T20:50:28.078+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=ny_taxi_local, task_id=create_directory.create_directory, execution_date=20230513T205026, start_date=20230513T205027, end_date=20230513T205028
+[2023-05-13T20:50:28.087+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 13 for task create_directory.create_directory ([Errno 13] Permission denied: '../data'; 207)
+[2023-05-13T20:50:28.116+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-13T20:50:28.136+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

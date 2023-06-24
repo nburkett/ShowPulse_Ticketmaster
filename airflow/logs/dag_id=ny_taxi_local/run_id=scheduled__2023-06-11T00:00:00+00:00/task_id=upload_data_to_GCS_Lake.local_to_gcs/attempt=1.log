@@ -1,0 +1,102 @@
+[2023-06-12T00:02:17.183+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.upload_data_to_GCS_Lake.local_to_gcs scheduled__2023-06-11T00:00:00+00:00 [queued]>
+[2023-06-12T00:02:17.189+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.upload_data_to_GCS_Lake.local_to_gcs scheduled__2023-06-11T00:00:00+00:00 [queued]>
+[2023-06-12T00:02:17.190+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-12T00:02:17.190+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-12T00:02:17.191+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-12T00:02:17.199+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): upload_data_to_GCS_Lake.local_to_gcs> on 2023-06-11 00:00:00+00:00
+[2023-06-12T00:02:17.204+0000] {standard_task_runner.py:55} INFO - Started process 120 to run task
+[2023-06-12T00:02:17.208+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'upload_data_to_GCS_Lake.local_to_gcs', 'scheduled__2023-06-11T00:00:00+00:00', '--job-id', '228', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmpginb6y95']
+[2023-06-12T00:02:17.210+0000] {standard_task_runner.py:83} INFO - Job 228: Subtask upload_data_to_GCS_Lake.local_to_gcs
+[2023-06-12T00:02:17.268+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.upload_data_to_GCS_Lake.local_to_gcs scheduled__2023-06-11T00:00:00+00:00 [running]> on host 04f5a8a63034
+[2023-06-12T00:02:17.333+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=upload_data_to_GCS_Lake.local_to_gcs
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-11T00:00:00+00:00
+[2023-06-12T00:02:26.649+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 217, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fetch_and_upload.py", line 98, in local_to_gcs
+    blob.upload_from_filename(local_file)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2696, in upload_from_filename
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2552, in upload_from_file
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2383, in _do_upload
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2214, in _do_resumable_upload
+    response = upload.transmit_next_chunk(transport, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/upload.py", line 516, in transmit_next_chunk
+    retriable_request, self._get_status_code, self._retry_strategy
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/_request_helpers.py", line 171, in wait_and_retry
+    raise error
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/_request_helpers.py", line 148, in wait_and_retry
+    response = func()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/resumable_media/requests/upload.py", line 508, in retriable_request
+    method, url, data=payload, headers=headers, timeout=timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/transport/requests.py", line 555, in request
+    **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2023-06-12T00:02:26.690+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=ny_taxi_local, task_id=upload_data_to_GCS_Lake.local_to_gcs, execution_date=20230611T000000, start_date=20230612T000217, end_date=20230612T000226
+[2023-06-12T00:02:26.710+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 228 for task upload_data_to_GCS_Lake.local_to_gcs (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); 120)
+[2023-06-12T00:02:26.771+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-06-12T00:02:26.796+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

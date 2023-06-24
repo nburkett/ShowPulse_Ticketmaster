@@ -1,0 +1,40 @@
+[2023-06-23T02:30:55.777+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: showpulse_dbt_dag.pwd2 scheduled__2023-06-23T02:29:52.899435+00:00 [queued]>
+[2023-06-23T02:30:55.782+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: showpulse_dbt_dag.pwd2 scheduled__2023-06-23T02:29:52.899435+00:00 [queued]>
+[2023-06-23T02:30:55.783+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23T02:30:55.784+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-23T02:30:55.784+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23T02:30:55.792+0000] {taskinstance.py:1309} INFO - Executing <Task(BashOperator): pwd2> on 2023-06-23 02:29:52.899435+00:00
+[2023-06-23T02:30:55.795+0000] {standard_task_runner.py:55} INFO - Started process 26200 to run task
+[2023-06-23T02:30:55.798+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'showpulse_dbt_dag', 'pwd2', 'scheduled__2023-06-23T02:29:52.899435+00:00', '--job-id', '2793', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmp_uj8viyy']
+[2023-06-23T02:30:55.799+0000] {standard_task_runner.py:83} INFO - Job 2793: Subtask pwd2
+[2023-06-23T02:30:55.849+0000] {task_command.py:389} INFO - Running <TaskInstance: showpulse_dbt_dag.pwd2 scheduled__2023-06-23T02:29:52.899435+00:00 [running]> on host 62cfed75eae1
+[2023-06-23T02:30:55.899+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=nburkett
+AIRFLOW_CTX_DAG_ID=showpulse_dbt_dag
+AIRFLOW_CTX_TASK_ID=pwd2
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-23T02:29:52.899435+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-23T02:29:52.899435+00:00
+[2023-06-23T02:30:55.901+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-23T02:30:55.902+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /dbt/ticketmaster_transformation && pwd && ls']
+[2023-06-23T02:30:55.911+0000] {subprocess.py:86} INFO - Output:
+[2023-06-23T02:30:55.913+0000] {subprocess.py:93} INFO - /dbt/ticketmaster_transformation
+[2023-06-23T02:30:55.915+0000] {subprocess.py:93} INFO - README.md
+[2023-06-23T02:30:55.915+0000] {subprocess.py:93} INFO - analyses
+[2023-06-23T02:30:55.916+0000] {subprocess.py:93} INFO - dbt_packages
+[2023-06-23T02:30:55.916+0000] {subprocess.py:93} INFO - dbt_project.yml
+[2023-06-23T02:30:55.917+0000] {subprocess.py:93} INFO - logs
+[2023-06-23T02:30:55.917+0000] {subprocess.py:93} INFO - macros
+[2023-06-23T02:30:55.917+0000] {subprocess.py:93} INFO - models
+[2023-06-23T02:30:55.918+0000] {subprocess.py:93} INFO - profiles.yml
+[2023-06-23T02:30:55.918+0000] {subprocess.py:93} INFO - seeds
+[2023-06-23T02:30:55.919+0000] {subprocess.py:93} INFO - snapshots
+[2023-06-23T02:30:55.919+0000] {subprocess.py:93} INFO - target
+[2023-06-23T02:30:55.919+0000] {subprocess.py:93} INFO - tests
+[2023-06-23T02:30:55.920+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-06-23T02:30:55.941+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=showpulse_dbt_dag, task_id=pwd2, execution_date=20230623T022952, start_date=20230623T023055, end_date=20230623T023055
+[2023-06-23T02:30:55.972+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-23T02:30:55.990+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check

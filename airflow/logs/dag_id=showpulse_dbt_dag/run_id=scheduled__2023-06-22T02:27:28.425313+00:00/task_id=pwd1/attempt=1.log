@@ -1,0 +1,28 @@
+[2023-06-22T02:28:28.917+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: showpulse_dbt_dag.pwd1 scheduled__2023-06-22T02:27:28.425313+00:00 [queued]>
+[2023-06-22T02:28:28.924+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: showpulse_dbt_dag.pwd1 scheduled__2023-06-22T02:27:28.425313+00:00 [queued]>
+[2023-06-22T02:28:28.925+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-22T02:28:28.925+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-06-22T02:28:28.926+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-22T02:28:28.935+0000] {taskinstance.py:1309} INFO - Executing <Task(BashOperator): pwd1> on 2023-06-22 02:27:28.425313+00:00
+[2023-06-22T02:28:28.939+0000] {standard_task_runner.py:55} INFO - Started process 12797 to run task
+[2023-06-22T02:28:28.943+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'showpulse_dbt_dag', 'pwd1', 'scheduled__2023-06-22T02:27:28.425313+00:00', '--job-id', '1567', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run.py', '--cfg-path', '/tmp/tmpfnhtj55n']
+[2023-06-22T02:28:28.944+0000] {standard_task_runner.py:83} INFO - Job 1567: Subtask pwd1
+[2023-06-22T02:28:29.009+0000] {task_command.py:389} INFO - Running <TaskInstance: showpulse_dbt_dag.pwd1 scheduled__2023-06-22T02:27:28.425313+00:00 [running]> on host 62cfed75eae1
+[2023-06-22T02:28:29.063+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=nburkett
+AIRFLOW_CTX_DAG_ID=showpulse_dbt_dag
+AIRFLOW_CTX_TASK_ID=pwd1
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-22T02:27:28.425313+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-22T02:27:28.425313+00:00
+[2023-06-22T02:28:29.064+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-22T02:28:29.065+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'pwd && ls']
+[2023-06-22T02:28:29.074+0000] {subprocess.py:86} INFO - Output:
+[2023-06-22T02:28:29.076+0000] {subprocess.py:93} INFO - /tmp/***tmpl0ic7l0g
+[2023-06-22T02:28:29.078+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-06-22T02:28:29.100+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=showpulse_dbt_dag, task_id=pwd1, execution_date=20230622T022728, start_date=20230622T022828, end_date=20230622T022829
+[2023-06-22T02:28:29.156+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-22T02:28:29.178+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check

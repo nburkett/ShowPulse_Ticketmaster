@@ -1,0 +1,35 @@
+[2023-05-13T21:45:14.628+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ny_taxi_local.create_directory.test manual__2023-05-13T21:45:13.557045+00:00 [queued]>
+[2023-05-13T21:45:14.633+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ny_taxi_local.create_directory.test manual__2023-05-13T21:45:13.557045+00:00 [queued]>
+[2023-05-13T21:45:14.634+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T21:45:14.634+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-05-13T21:45:14.635+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-13T21:45:14.643+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): create_directory.test> on 2023-05-13 21:45:13.557045+00:00
+[2023-05-13T21:45:14.648+0000] {standard_task_runner.py:55} INFO - Started process 1594 to run task
+[2023-05-13T21:45:14.652+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ny_taxi_local', 'create_directory.test', 'manual__2023-05-13T21:45:13.557045+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmpk733kcm2']
+[2023-05-13T21:45:14.654+0000] {standard_task_runner.py:83} INFO - Job 45: Subtask create_directory.test
+[2023-05-13T21:45:14.709+0000] {task_command.py:389} INFO - Running <TaskInstance: ny_taxi_local.create_directory.test manual__2023-05-13T21:45:13.557045+00:00 [running]> on host fdfc81637e26
+[2023-05-13T21:45:14.758+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ny_taxi_local
+AIRFLOW_CTX_TASK_ID=create_directory.test
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-13T21:45:13.557045+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-13T21:45:13.557045+00:00
+[2023-05-13T21:45:14.760+0000] {logging_mixin.py:137} INFO - TESTING THIS EXAMPLE DAG
+[2023-05-13T21:45:14.760+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 217, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fetch_and_upload.py", line 40, in test
+    print({{ run_id }})
+NameError: name 'run_id' is not defined
+[2023-05-13T21:45:14.769+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=ny_taxi_local, task_id=create_directory.test, execution_date=20230513T214513, start_date=20230513T214514, end_date=20230513T214514
+[2023-05-13T21:45:14.776+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 45 for task create_directory.test (name 'run_id' is not defined; 1594)
+[2023-05-13T21:45:14.826+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-13T21:45:14.844+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check
