@@ -12,7 +12,7 @@ with DAG(
     dag_id = f'showpulse_dbt_dag',
     default_args = default_args,
     description = f'Hourly data pipeline to generate dims and facts for streamify',
-    schedule_interval=timedelta(minutes=1), 
+    schedule_interval=timedelta(minutes=5), 
     start_date=datetime(2023,6,17),
     catchup=False,
     max_active_runs=1,

@@ -1,19 +1,30 @@
 import time 
-import json 
-from datetime import datetime
+import json
 from ticketmaster_api_fetch import fetch_ticketmaster_data
 from kafka import KafkaProducer
-import pandas as pd
 
 
+## SHELL SCRIPT TO RUN FROM CLI 
+import sys
+# Read CLI arguments
+if len(sys.argv) > 2:
+    city = sys.argv[1]
+    state = sys.argv[2]
+else:
+    city = 'Austin'
+    state = 'TX'
 
-## INPUT 
-df = fetch_ticketmaster_data('New York','NY','US')
-# df.head()
+# Use the city and state to fetch_ticketmaster_data function
+df = fetch_ticketmaster_data(city, state, 'US')
+
+
+## MANUAL INPUT 
+# df = fetch_ticketmaster_data('New York','NY','US')
+
+#Optional - save the data to a csv file
 # df.to_csv('/Users/nicburkett/Downloads/houston_data.csv')
 
 ## SET UP THE KAFKA PRODUCER 
-
 topic_name = 'ticketmaster'
 # Messages will be serialized as JSON 
 def serializer(message):
