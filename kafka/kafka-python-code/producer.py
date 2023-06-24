@@ -8,7 +8,7 @@ import pandas as pd
 
 
 ## INPUT 
-df = fetch_ticketmaster_data('San Antonio','TX','US')
+df = fetch_ticketmaster_data('New York','NY','US')
 # df.head()
 # df.to_csv('/Users/nicburkett/Downloads/houston_data.csv')
 
@@ -41,7 +41,7 @@ for _, row in df.iterrows():
     
     # Send the JSON message to the Kafka topic
     producer.send(topic_name, message)
-    time.sleep(0.01)
+    time.sleep(5)
 
 # Close the Kafka producer
 producer.close()

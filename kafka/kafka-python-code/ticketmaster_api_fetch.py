@@ -2,6 +2,13 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta, date
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Get API Key
+ticketmaster_api_key = os.getenv('ticketmaster_api_key')
 
 
 def drop_na_cols(df):
@@ -107,7 +114,7 @@ def fetch_ticketmaster_data(city:str, stateCode: str, countryCode:str ) -> pd.Da
     # Set up API credentials and parameters
     base_url = 'https://app.ticketmaster.com/discovery/v2/events.json'
     params = {
-        'apikey': '16AI00EAgNeGSZqgQKrLc0GUf8fVhDaa',
+        'apikey': ticketmaster_api_key,
         'city': city,
         'stateCode': stateCode,
         'countryCode': countryCode,
