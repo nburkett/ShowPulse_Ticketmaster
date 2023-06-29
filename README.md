@@ -29,7 +29,7 @@ This project uses the Ticketmaster API to collect, transform and then visualize 
 
 ### Architecture
 
-![streamify-architecture](images/Showpulse_Architecture.jpg)
+![showpulse architecture](images/ShowPulse_Architecture.jpg)
 
 ### Final Result
 
