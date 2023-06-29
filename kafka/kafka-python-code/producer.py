@@ -52,7 +52,7 @@ for _, row in df.iterrows():
     
     # Send the JSON message to the Kafka topic
     producer.send(topic_name, message)
-    time.sleep(5)
+    time.sleep(0.25)
 
 # Close the Kafka producer
 producer.close()
