@@ -1,0 +1,27 @@
+ticketmaster_transformation:
+  outputs:
+    dev:
+      dataset: twitter_kafka_pyspark_test
+      fixed_retries: 1
+      # keyfile: /Users/nicburkett/.google/credentials/google_credentials.json
+      keyfile: /.google/credentials/google_credentials.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: "global-maxim-338114"
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+    prod:
+      dataset: global-maxim-338114.twitter_kafka_pyspark_test
+      fixed_retries: 1
+      # keyfile: /Users/nicburkett/.google/credentials/google_credentials.json
+      keyfile: /.google/credentials/google_credentials.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: "global-maxim-338114"
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+  target: dev

@@ -1,0 +1,23 @@
+
+
+version : 2
+sources:
+  - name: staging
+    database: global-maxim-338114
+    schema: twitter_kafka_pyspark_test
+
+    tables:
+      - name : kafka_pyspark
+      - name : ticketmaster_airflow_stg
+      - name : ticketmaster_airflow_prod
+
+# models:
+#   - name: dm_events
+#     description: "A starter dbt model"
+#     columns:
+#       - event_id: id
+#       - event_name: name
+#       - event_type: type
+#       - event_url: url
+
+
