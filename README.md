@@ -24,20 +24,20 @@ This project uses the Ticketmaster API to collect, transform and then visualize 
 - Transformation - [**dbt**](https://www.getdbt.com)
 - Data Lake - [**Google Cloud Storage**](https://cloud.google.com/storage)
 - Data Warehouse - [**BigQuery**](https://cloud.google.com/bigquery)
-- Data Visualization - [**Data Studio**](https://datastudio.google.com/overview)
+- Data Visualization - [**Tableau**](https://www.tableau.com/)
 - Language - [**Python**](https://www.python.org)
 
 ### Architecture
 
-![showpulse architecture](images/ShowPulse_Architecture.jpg)
+![show pulse architecture](images/ShowPulse_Architecture.jpg)
 
 ### Final Result
 
-![dashboard](images/dashboard.png)
+![show pulse dashboard](images/Showpulse_Dashboard.png)
 
 ## Setup
 
-**WARNING: You will be charged for all the infra setup. You can avail 300$ in credit by creating a new account on GCP.**
+**WARNING: You will be charged for all the infrastructure setup. If you sign up for a Google Cloud account you will start with a  $300 credit.**
 ### Pre-requisites
 
 If you already have a Google Cloud account and a working terraform setup, you can skip the pre-requisite steps.
@@ -51,7 +51,6 @@ If you already have a Google Cloud account and a working terraform setup, you ca
 
 ### Get Going!
 
-
 - Set up infrastructure in GCP, including storage buckets, and bigquery.
 - Install dependencies needed to run Spark and Kafka
 - Run Startup Scripts
@@ -60,12 +59,13 @@ If you already have a Google Cloud account and a working terraform setup, you ca
 ### How can I make this better?!
 - Add more data about the artist/attraction (like Spotify plays per month, avg ticket price) and then call out great deals
 - Choose managed infrastructure like Cloud Composer for Airflow, Dataproc for Spark and Confluent Cloud for Kafka
-- Optimize the Kafka & Spark streaming setup 
+- Optimize the Kafka, Spark & dbt streaming setup 
 - Build dimensions and facts incrementally instead of full refresh
 - Create more dimensional models
 - Include CI/CD
 - Include Terraform and the infrastructure setup
 - Add more visualizations
+- Add more instructions to this repo
 
 ### Special Mentions
 I learned this all thanks to [DataTalks.Club](https://datatalks.club)!! Thank you so much for offering this Data Engineering course for completely free. All the things I learned there, enabled me to come up with this project. I had little to no experience with most of these technologies before, and it really helped me gain a better understanding. If you want to upskill on Data Engineering technologies, please check out the [course](https://github.com/DataTalksClub/data-engineering-zoomcamp)!
