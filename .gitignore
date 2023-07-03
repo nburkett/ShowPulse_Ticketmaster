@@ -1,8 +1,10 @@
-dbt/logs
 airflow/logs
 config.py
 ~/.google/credentials
 .idea
 .vscode
 .env
+airflow/.env
+*.ipynb
+
 
