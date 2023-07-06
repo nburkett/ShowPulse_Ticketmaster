@@ -6,6 +6,12 @@ import json
 import random 
 from datetime import datetime
 from kafka import KafkaProducer
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+ticketmaster_api_key = os.getenv('ticketmaster_api_key')
 
 
 
@@ -100,7 +106,7 @@ def flatten_and_drop(original_df, cols_to_flatten):
 
 
 # Set up API credentials and parameters
-api_key = '16AI00EAgNeGSZqgQKrLc0GUf8fVhDaa'
+api_key = ticketmaster_api_key
 base_url = 'https://app.ticketmaster.com/discovery/v2/events.json'
 city = 'Austin'
 state = 'TX'
